@@ -1,0 +1,5 @@
+name = "make-mcp-server"
+main = "build/index.js"
+compatibility_date = "2025-06-12"
+type = "module"
+compatibility_flags = ["nodejs_compat"]
