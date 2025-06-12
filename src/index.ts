@@ -87,4 +87,11 @@ server.setRequestHandler(CallToolRequestSchema, async request => {
 });
 
 const transport = new StdioServerTransport();
-await server.connect(transport);
+const run = async () => {
+    await server.connect(transport);
+};
+
+run();
+
+// 👇 obligatoire pour Cloudflare en module
+export default {};
