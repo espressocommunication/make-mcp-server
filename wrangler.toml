@@ -1,5 +1,9 @@
 name = "make-mcp-server"
 main = "build/index.js"
 compatibility_date = "2025-06-12"
-type = "module"
+
+# ➕ Active la compatibilité Node.js dans le runtime
 compatibility_flags = ["nodejs_compat"]
+
+[build]
+upload.format = "modules"
